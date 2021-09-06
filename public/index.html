@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans">
+    <title>NodeMCU Button Server</title>
+    <style>
+        body {
+            background-color: #0e1621;
+            color: #fff;
+            font-family: 'Fira Sans', sans-serif;
+            text-align: center;
+            margin: 0;
+        }
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: darkgray;
+            transition: .5s;
+        }
+        footer {
+            padding-bottom: 1em;
+        }
+        .centerbox {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            justify-content: center;
+            align-items: center;
+        }
+        .cb-element{
+            width: auto;
+            height: auto;
+            margin-left: 1em;
+            margin-right: 1em;
+        }
+        .errorcode {
+            font-size: 7em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="centerbox">
+        <div class="cb-element">
+            <p class="errorcode">
+                <i class="fab fa-raspberry-pi"></i> <i class="fas fa-hockey-puck"></i> <i class="fas fa-check"></i>
+            </p>
+        </div>
+        <div class="cb-element">
+            <strong>
+                <h1>Waiting for requests.</h1>
+                <h3>NodeMCU Button Server is working.</h3>
+            </strong>
+        </div>
+    </div>
+</body>
+</html>

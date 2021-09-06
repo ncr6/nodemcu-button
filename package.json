@@ -1,0 +1,31 @@
+{
+  "name": "nodemcu-button",
+  "version": "1.0.0",
+  "description": "A simple, unauthenticated, quick and dirty backend attempt designed for Raspberry Pi to accept web requests from a NodeMCU ESP8266 board that triggers a GPIO buzzer and a Telegram message",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ncr6/nodemcu-button.git"
+  },
+  "keywords": [
+    "nodemcu",
+    "iot",
+    "raspberry-pi"
+  ],
+  "author": "ncr6",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ncr6/nodemcu-button/issues"
+  },
+  "homepage": "https://github.com/ncr6/nodemcu-button#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.12",
+    "telegraf": "^4.4.1",
+    "time-stamp": "^2.2.0"
+  }
+}
