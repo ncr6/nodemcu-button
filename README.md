@@ -20,13 +20,14 @@ Clone the repo:
 Replace your Wi-Fi settings on the Arduino-like C file (sketch_nodemcu.c) and write it to your board. If required, replace the pin numbers according to your Raspberry Pi Model.
 Connect the components like this:
 ![ESP8266 and push button wiring](https://github.com/ncr6/nodemcu-button/blob/master/schematics/nodemcu.png?raw=true)
-*I used an old Raspberry Pi 1B (to prevent e-waste) which only has 26 GPIO pins, so if you're using something less outdated with 40 pins, just change the pin numbers in the code.*
 ![Raspberry Pi and buzzer wiring](https://github.com/ncr6/nodemcu-button/blob/master/schematics/rpi.png?raw=true)
+*I used an old Raspberry Pi 1B (to prevent e-waste) which only has 26 GPIO pins, so if you're using something less outdated with 40 pins, just change the pin numbers in the code. Alternatively, you can wire it like this:*
+![Raspberry Pi and buzzer wiring](https://github.com/ncr6/nodemcu-button/blob/master/schematics/rpi4.png?raw=true)
 Copy the project files to your Raspberry Pi via SSH or your preferred method.
 Install dependencies with `npm install`
 Run the Express.js-based server with the following environment variables:
 - **NODEMCU_IP** (Your ESP8266 board local IP address, this should prevent other devices on your network from accidentally triggering the alerts).
 - **TELEGRAM_NDTOKEN** (Your Telegram bot token given by BotFather).
-- **CHANNEL_ID** (Telegram channel ID where the alerts will be posted, if it's public, use the username here, if it's private, look for a number like -123456789, remember to add your bot to the channel).
+- **CHANNEL_ID** (Telegram channel ID where the alerts will be posted, if it's public, use the username here, if it's private, look for a number like -123456789 in API responses, remember to add your bot to the channel).
 
 Of course, this has a lot of flaws. Pull requests and issues are welcome ;)
